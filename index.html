@@ -1,33 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <title>Castrus Digital ✦ Design, Web, Vídeo e Fotografia</title>
+
     <meta name="description"
-        content="Castrus Digital é uma agência criativa especializada em design gráfico, desenvolvimento de sites, edição de vídeos e fotografia profissional. Transformamos ideias em experiências visuais únicas.">
+        content="Castrus Digital é uma agência criativa especializada em design gráfico, desenvolvimento de sites, edição de vídeos e fotografia profissional. Transformamos ideias em experiências visuais únicas." />
     <meta name="keywords"
-        content="agência de design, desenvolvimento web, edição de vídeo, fotografia, branding, identidade visual, Castrus Digital, design gráfico">
-    <meta name="author" content="Castrus Digital">
-    <meta property="og:title" content="Castrus Digital ✦ Design, Web, Vídeo e Fotografia">
+        content="batatais, agencia em batatais, batatais sp, agência de design, desenvolvimento web, edição de vídeo, fotografia, branding, identidade visual, Castrus Digital, design gráfico" />
+    <meta name="author" content="Castrus Digital" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.castrus.digital" />
+
+    <!-- Favicons / PWA icons -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta name="theme-color" content="#ffc400" />
+
+    <!-- Preload important resources -->
+    <link rel="preload" href="assets/css/style.css" as="style" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" />
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Castrus Digital" />
+    <meta property="og:title" content="Castrus Digital ✦ Design, Web, Vídeo e Fotografia" />
     <meta property="og:description"
-        content="Agência criativa que une design, tecnologia e arte para criar soluções digitais incríveis.">
-    <meta property="og:image" content="assets/img/og-image.png">
-    <meta property="og:url" content="https://www.castrus.digital">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        content="Agência criativa que une design, tecnologia e arte para criar soluções digitais incríveis." />
+    <meta property="og:image" content="https://www.castrus.digital/assets/img/og-image.png" />
+    <meta property="og:url" content="https://www.castrus.digital" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Castrus Digital ✦ Design, Web, Vídeo e Fotografia" />
+    <meta name="twitter:description"
+        content="Agência criativa especializada em design gráfico, desenvolvimento web, vídeos e fotografia." />
+    <meta name="twitter:image" content="https://www.castrus.digital/assets/img/og-image.png" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Castrus Digital",
+      "url": "https://www.castrus.digital",
+      "logo": "https://www.castrus.digital/assets/img/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/castrus.digital",
+        "https://www.linkedin.com/company/castrus-digital"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-16-97406-0017",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "description": "Agência criativa especializada em design gráfico, desenvolvimento de sites, edição de vídeos e fotografia profissional."
+    }
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
 </head>
+
 
 <body>
     <div id="particles-js" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
@@ -49,15 +99,15 @@
             <!-- Menu padrão para telas grandes -->
             <div class="d-none d-lg-flex ms-auto">
                 <ul class="navbar-nav text-uppercase fw-medium">
-                                            <li class="nav-item">
-                            <a class="nav-link text-white" href="#portfolio"><span class="shine">✦</span>
-                                Portfólio</a>
-                        </li>
-                                            <li class="nav-item">
-                            <a class="nav-link text-white" href="#contato"><span class="shine">✦</span>
-                                Contato</a>
-                        </li>
-                                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#portfolio"><span class="shine">✦</span>
+                            Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contato"><span class="shine">✦</span>
+                            Contato</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -71,15 +121,15 @@
         <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
             <img src="assets/img/logo.png" class="mb-5" width="100px" alt="Castrus Digital logo">
             <ul class="navbar-nav text-uppercase fw-medium">
-                                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#portfolio"><span class="shine">✦</span>
-                            Portfólio</a>
-                    </li>
-                                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contato"><span class="shine">✦</span>
-                            Contato</a>
-                    </li>
-                            </ul>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#portfolio"><span class="shine">✦</span>
+                        Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato"><span class="shine">✦</span>
+                        Contato</a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -91,10 +141,11 @@
                 Sua nova agência <span class="marker-below random-shake-2 text-yellow">favorita</span>
             </h1>
 
-            <p data-aos="fade-in" class="lead text-light mb-4 w-75">Oferecemos todos os serviços criativos que você precisa: <span
-                    class="text-yellow">design
+            <p data-aos="fade-in" class="lead text-light mb-4 w-75">Oferecemos todos os serviços criativos que você
+                precisa: <span class="text-yellow">design
                     gráfico, desenvolvimento de sites, vídeos e fotografia.</span> Tudo em um só lugar.</p>
-            <a data-aos="zoom-in" href="#contato" class="random-shake btn btn-warning text-dark fw-bold px-4 py-2">Pedir orçamento</a>
+            <a data-aos="zoom-in" href="#contato" class="random-shake btn btn-warning text-dark fw-bold px-4 py-2">Pedir
+                orçamento</a>
             <div data-aos="fade-down" class="mouse mt-5 random-shake"></div>
         </div>
     </header>
@@ -103,8 +154,10 @@
         <section id="sobre" class="container mb-5">
             <div class="row">
                 <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-start">
-                    <h2 data-aos="zoom-in" class="section-title mb-3 title-2">Quem somos? <span class="shine">✦</span></h2>
-                    <p data-aos="fade-right" style="font-size: 1.5em" class="text-white regular">Somos uma <span class="text-yellow">agência
+                    <h2 data-aos="zoom-in" class="section-title mb-3 title-2">Quem somos? <span class="shine">✦</span>
+                    </h2>
+                    <p data-aos="fade-right" style="font-size: 1.5em" class="text-white regular">Somos uma <span
+                            class="text-yellow">agência
                             criativa</span> focada em unir
                         <span class="text-yellow">tecnologia, arte e estratégia</span>. Nossa
                         missão é transformar ideias em <span class="text-yellow">experiências visuais
@@ -112,7 +165,8 @@
                         inovação.
                     </p>
                 </div>
-                <div data-aos="zoom-in" class="col-6 d-none d-md-flex flex-column justify-content-center align-items-end">
+                <div data-aos="zoom-in"
+                    class="col-6 d-none d-md-flex flex-column justify-content-center align-items-end">
                     <img class="random-shake w-100" src="assets/img/check.png" alt="">
                 </div>
             </div>
@@ -120,233 +174,244 @@
 
         <!-- Serviços -->
         <section id="servicos" class="py-5 rounded-4 mb-5">
-            <h2 data-aos="fade-down" class="section-title text-center mb-5 title">Nossos serviços <span class="shine">✦</span></h2>
+            <h2 data-aos="fade-down" class="section-title text-center mb-5 title">Nossos serviços <span
+                    class="shine">✦</span></h2>
             <div class="row text-center g-4">
-                                    <div data-aos="zoom-in" class="col-md-3">
-                        <div class="card h-100 service_card">
-                            <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets/img/services/design.png" loading="lazy" width="100px" class="random-shake mb-3"
-                                    alt="Design Gráfico">
-                                <h5 class="text-white card-title">Design Gráfico <span class="shine">✦</span></h5>
-                                <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
-                                    class="regular text-yellow">Criação de identidade visual, logotipos, materiais gráficos e muito mais.</p>
-                            </div>
+                <div data-aos="zoom-in" class="col-md-3">
+                    <div class="card h-100 service_card">
+                        <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/services/design.png" loading="lazy" width="100px"
+                                class="random-shake mb-3" alt="Design Gráfico">
+                            <h5 class="text-white card-title">Design Gráfico <span class="shine">✦</span></h5>
+                            <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
+                                class="regular text-yellow">Criação de identidade visual, logotipos, materiais gráficos
+                                e muito mais.</p>
                         </div>
                     </div>
-                                    <div data-aos="zoom-in" class="col-md-3">
-                        <div class="card h-100 service_card">
-                            <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets/img/services/sites.png" loading="lazy" width="100px" class="random-shake mb-3"
-                                    alt="Desenvolvimento<br>Web">
-                                <h5 class="text-white card-title">Desenvolvimento<br>Web <span class="shine">✦</span></h5>
-                                <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
-                                    class="regular text-yellow">Sites responsivos, lojas virtuais e sistemas personalizados.</p>
-                            </div>
+                </div>
+                <div data-aos="zoom-in" class="col-md-3">
+                    <div class="card h-100 service_card">
+                        <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/services/sites.png" loading="lazy" width="100px"
+                                class="random-shake mb-3" alt="Desenvolvimento<br>Web">
+                            <h5 class="text-white card-title">Desenvolvimento<br>Web <span class="shine">✦</span></h5>
+                            <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
+                                class="regular text-yellow">Sites responsivos, lojas virtuais e sistemas personalizados.
+                            </p>
                         </div>
                     </div>
-                                    <div data-aos="zoom-in" class="col-md-3">
-                        <div class="card h-100 service_card">
-                            <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets/img/services/video.png" loading="lazy" width="100px" class="random-shake mb-3"
-                                    alt="Edição de Vídeo">
-                                <h5 class="text-white card-title">Edição de Vídeo <span class="shine">✦</span></h5>
-                                <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
-                                    class="regular text-yellow">Produção e edição de vídeos para redes sociais, YouTube e eventos.</p>
-                            </div>
+                </div>
+                <div data-aos="zoom-in" class="col-md-3">
+                    <div class="card h-100 service_card">
+                        <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/services/video.png" loading="lazy" width="100px"
+                                class="random-shake mb-3" alt="Edição de Vídeo">
+                            <h5 class="text-white card-title">Edição de Vídeo <span class="shine">✦</span></h5>
+                            <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
+                                class="regular text-yellow">Produção e edição de vídeos para redes sociais, YouTube e
+                                eventos.</p>
                         </div>
                     </div>
-                                    <div data-aos="zoom-in" class="col-md-3">
-                        <div class="card h-100 service_card">
-                            <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets/img/services/fotografia.png" loading="lazy" width="100px" class="random-shake mb-3"
-                                    alt="Fotografia<br>Profissional">
-                                <h5 class="text-white card-title">Fotografia<br>Profissional <span class="shine">✦</span></h5>
-                                <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
-                                    class="regular text-yellow">Fotografia de produtos, eventos e retratos.</p>
-                            </div>
+                </div>
+                <div data-aos="zoom-in" class="col-md-3">
+                    <div class="card h-100 service_card">
+                        <div class="card-body h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/services/fotografia.png" loading="lazy" width="100px"
+                                class="random-shake mb-3" alt="Fotografia<br>Profissional">
+                            <h5 class="text-white card-title">Fotografia<br>Profissional <span class="shine">✦</span>
+                            </h5>
+                            <p style="text-align: center;font-size: 0.9em;word-wrap: break-word;"
+                                class="regular text-yellow">Fotografia de produtos, eventos e retratos.</p>
                         </div>
                     </div>
-                            </div>
+                </div>
+            </div>
         </section>
 
         <!-- Portfólio -->
         <section id="portfolio" class="mb-5">
-            <h2 data-aos="fade-down" class="section-title text-center mb-4 title">Portfólio <span class="shine">✦</span></h2>
+            <h2 data-aos="fade-down" class="section-title text-center mb-4 title">Portfólio <span class="shine">✦</span>
+            </h2>
             <div class="row g-4">
-                                    <div data-aos="zoom-in" class="col-12 mb-3">
-                        <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-7 p-3">
-                                    <h4 class="card-title text-yellow">Website Horizonte Roleplay</h4>
-                                    <p class="card-text regular">Website do servidor de SA-MP Horizonte Roleplay, com design responsivo e otimizado para SEO. Com backend em Codeigniter.</p>
-                                    <div class="mb-3">
-                                                                                    <span class="badge bg-warning text-dark me-1">website</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">design</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">codeigniter</span>
-                                                                            </div>
-                                    <a href="https://horizonte-rp.com" target="_blank" class="btn btn-warning fw-bold"><i
-                                            class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                <div data-aos="zoom-in" class="col-12 mb-3">
+                    <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-7 p-3">
+                                <h4 class="card-title text-yellow">Website Horizonte Roleplay</h4>
+                                <p class="card-text regular">Website do servidor de SA-MP Horizonte Roleplay, com design
+                                    responsivo e otimizado para SEO. Com backend em Codeigniter.</p>
+                                <div class="mb-3">
+                                    <span class="badge bg-warning text-dark me-1">website</span>
+                                    <span class="badge bg-warning text-dark me-1">design</span>
+                                    <span class="badge bg-warning text-dark me-1">codeigniter</span>
                                 </div>
-                                <div class="col-md-5">
-                                    <div id="carousel-96fe97b0643230dff7bb0bec98cd2cdc" class="carousel slide"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-item active">
-                                            <img src="https://i.imgur.com/0zi7dwj.png" class="d-block w-100 rounded"
-                                                alt="Website Horizonte Roleplay">
-                                        </div>
-                                        <!-- Você pode adicionar mais imagens futuramente aqui -->
+                                <a href="https://horizonte-rp.com" target="_blank" class="btn btn-warning fw-bold"><i
+                                        class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                            </div>
+                            <div class="col-md-5">
+                                <div id="carousel-96fe97b0643230dff7bb0bec98cd2cdc" class="carousel slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-item active">
+                                        <img src="https://i.imgur.com/0zi7dwj.png" class="d-block w-100 rounded"
+                                            alt="Website Horizonte Roleplay">
                                     </div>
+                                    <!-- Você pode adicionar mais imagens futuramente aqui -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div data-aos="zoom-in" class="col-12 mb-3">
-                        <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-7 p-3">
-                                    <h4 class="card-title text-yellow">Painel de Jogadores Horizonte RP</h4>
-                                    <p class="card-text regular">Painel de Jogadores do servidor de SA-MP Horizonte Roleplay, com diversos sistemas integrados.</p>
-                                    <div class="mb-3">
-                                                                                    <span class="badge bg-warning text-dark me-1">php</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">website</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">codeigniter</span>
-                                                                            </div>
-                                    <a href="https://horizonte-rp.com/ucp" target="_blank" class="btn btn-warning fw-bold"><i
-                                            class="bi-box-arrow-in-right"></i> Ver projeto</a>
+            </div>
+            <div data-aos="zoom-in" class="col-12 mb-3">
+                <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-7 p-3">
+                            <h4 class="card-title text-yellow">Painel de Jogadores Horizonte RP</h4>
+                            <p class="card-text regular">Painel de Jogadores do servidor de SA-MP Horizonte Roleplay,
+                                com diversos sistemas integrados.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">php</span>
+                                <span class="badge bg-warning text-dark me-1">website</span>
+                                <span class="badge bg-warning text-dark me-1">codeigniter</span>
+                            </div>
+                            <a href="https://horizonte-rp.com/ucp" target="_blank" class="btn btn-warning fw-bold"><i
+                                    class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                        </div>
+                        <div class="col-md-5">
+                            <div id="carousel-9ad1a8f0b8268beb9e950002c3aebe1e" class="carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/R4iU7zX.png" class="d-block w-100 rounded"
+                                        alt="Painel de Jogadores Horizonte RP">
                                 </div>
-                                <div class="col-md-5">
-                                    <div id="carousel-9ad1a8f0b8268beb9e950002c3aebe1e" class="carousel slide"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-item active">
-                                            <img src="https://i.imgur.com/R4iU7zX.png" class="d-block w-100 rounded"
-                                                alt="Painel de Jogadores Horizonte RP">
-                                        </div>
-                                        <!-- Você pode adicionar mais imagens futuramente aqui -->
-                                    </div>
+                                <!-- Você pode adicionar mais imagens futuramente aqui -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div data-aos="zoom-in" class="col-12 mb-3">
+                <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-7 p-3">
+                            <h4 class="card-title text-yellow">Game Launcher Horizonte RP</h4>
+                            <p class="card-text regular">Game Launcher do servidor de SA-MP Horizonte Roleplay,
+                                desenvolvido em ElectronJS.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">Electron</span>
+                                <span class="badge bg-warning text-dark me-1">game launcher</span>
+                                <span class="badge bg-warning text-dark me-1">sa-mp</span>
+                            </div>
+                            <a href="https://horizonte-rp.com" target="_blank" class="btn btn-warning fw-bold"><i
+                                    class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                        </div>
+                        <div class="col-md-5">
+                            <div id="carousel-8d75ec9f78525852a45e60d3a34c0ba9" class="carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/v01l1ZF.png" class="d-block w-100 rounded"
+                                        alt="Game Launcher Horizonte RP">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div data-aos="zoom-in" class="col-12 mb-3">
-                        <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-7 p-3">
-                                    <h4 class="card-title text-yellow">Game Launcher Horizonte RP</h4>
-                                    <p class="card-text regular">Game Launcher do servidor de SA-MP Horizonte Roleplay, desenvolvido em ElectronJS.</p>
-                                    <div class="mb-3">
-                                                                                    <span class="badge bg-warning text-dark me-1">Electron</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">game launcher</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">sa-mp</span>
-                                                                            </div>
-                                    <a href="https://horizonte-rp.com" target="_blank" class="btn btn-warning fw-bold"><i
-                                            class="bi-box-arrow-in-right"></i> Ver projeto</a>
+            </div>
+            </div>
+            <div data-aos="zoom-in" class="col-12 mb-3">
+                <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-7 p-3">
+                            <h4 class="card-title text-yellow">Website Sombras que Ecoam</h4>
+                            <p class="card-text regular">Website do curta-metragem Sombras que Ecoam, com design
+                                responsivo e otimizado para SEO.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">website</span>
+                                <span class="badge bg-warning text-dark me-1">design</span>
+                                <span class="badge bg-warning text-dark me-1">landing-page</span>
+                            </div>
+                            <a href="https://sombrasqueeecoam.com.br/" target="_blank"
+                                class="btn btn-warning fw-bold"><i class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                        </div>
+                        <div class="col-md-5">
+                            <div id="carousel-471bb0bb3a74779b1cda0ea9f0984dde" class="carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/CVac7Rh.png" class="d-block w-100 rounded"
+                                        alt="Website Sombras que Ecoam">
                                 </div>
-                                <div class="col-md-5">
-                                    <div id="carousel-8d75ec9f78525852a45e60d3a34c0ba9" class="carousel slide"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-item active">
-                                            <img src="https://i.imgur.com/v01l1ZF.png" class="d-block w-100 rounded"
-                                                alt="Game Launcher Horizonte RP">
-                                        </div>
-                                        <!-- Você pode adicionar mais imagens futuramente aqui -->
-                                    </div>
+                                <!-- Você pode adicionar mais imagens futuramente aqui -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div data-aos="zoom-in" class="col-12 mb-3">
+                <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-7 p-3">
+                            <h4 class="card-title text-yellow">Website Postim Tabacaria</h4>
+                            <p class="card-text regular">Website da Postim Tabacaria, com design responsivo e otimizado
+                                para SEO. Tema criado autoralmente para WordPress e PHP.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">website</span>
+                                <span class="badge bg-warning text-dark me-1">design</span>
+                                <span class="badge bg-warning text-dark me-1">wordpress</span>
+                            </div>
+                            <a href="https://www.postimtabacaria.com.br/" target="_blank"
+                                class="btn btn-warning fw-bold"><i class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                        </div>
+                        <div class="col-md-5">
+                            <div id="carousel-b5550adda11be2504db119b661b67d09" class="carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/ZCtNDhY.png" class="d-block w-100 rounded"
+                                        alt="Website Postim Tabacaria">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div data-aos="zoom-in" class="col-12 mb-3">
-                        <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-7 p-3">
-                                    <h4 class="card-title text-yellow">Website Sombras que Ecoam</h4>
-                                    <p class="card-text regular">Website do curta-metragem Sombras que Ecoam, com design responsivo e otimizado para SEO.</p>
-                                    <div class="mb-3">
-                                                                                    <span class="badge bg-warning text-dark me-1">website</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">design</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">landing-page</span>
-                                                                            </div>
-                                    <a href="https://sombrasqueeecoam.com.br/" target="_blank" class="btn btn-warning fw-bold"><i
-                                            class="bi-box-arrow-in-right"></i> Ver projeto</a>
+            </div>
+            </div>
+            <div data-aos="zoom-in" class="col-12 mb-3">
+                <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-7 p-3">
+                            <h4 class="card-title text-yellow">Diversos outros projetos</h4>
+                            <p class="card-text regular">Confira outros projetos desenvolvidos por nós, incluindo sites,
+                                design gráfico e fotografia no nosso Behance.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">website</span>
+                                <span class="badge bg-warning text-dark me-1">design</span>
+                                <span class="badge bg-warning text-dark me-1">fotografia</span>
+                            </div>
+                            <a href="https://www.behance.net/castrusdigital" target="_blank"
+                                class="btn btn-warning fw-bold"><i class="bi-box-arrow-in-right"></i> Ver projeto</a>
+                        </div>
+                        <div class="col-md-5">
+                            <div id="carousel-10a54d64464ebe3be964afa42d6bf530" class="carousel slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-item active">
+                                    <img src="https://i.imgur.com/6gBgECH.png" class="d-block w-100 rounded"
+                                        alt="Diversos outros projetos">
                                 </div>
-                                <div class="col-md-5">
-                                    <div id="carousel-471bb0bb3a74779b1cda0ea9f0984dde" class="carousel slide"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-item active">
-                                            <img src="https://i.imgur.com/CVac7Rh.png" class="d-block w-100 rounded"
-                                                alt="Website Sombras que Ecoam">
-                                        </div>
-                                        <!-- Você pode adicionar mais imagens futuramente aqui -->
-                                    </div>
-                                </div>
+                                <!-- Você pode adicionar mais imagens futuramente aqui -->
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div data-aos="zoom-in" class="col-12 mb-3">
-                        <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-7 p-3">
-                                    <h4 class="card-title text-yellow">Website Postim Tabacaria</h4>
-                                    <p class="card-text regular">Website da Postim Tabacaria, com design responsivo e otimizado para SEO. Tema criado autoralmente para WordPress e PHP.</p>
-                                    <div class="mb-3">
-                                                                                    <span class="badge bg-warning text-dark me-1">website</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">design</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">wordpress</span>
-                                                                            </div>
-                                    <a href="https://www.postimtabacaria.com.br/" target="_blank" class="btn btn-warning fw-bold"><i
-                                            class="bi-box-arrow-in-right"></i> Ver projeto</a>
-                                </div>
-                                <div class="col-md-5">
-                                    <div id="carousel-b5550adda11be2504db119b661b67d09" class="carousel slide"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-item active">
-                                            <img src="https://i.imgur.com/ZCtNDhY.png" class="d-block w-100 rounded"
-                                                alt="Website Postim Tabacaria">
-                                        </div>
-                                        <!-- Você pode adicionar mais imagens futuramente aqui -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                                <div data-aos="zoom-in" class="col-12 mb-3">
-                        <div class="card shadow-lg rounded-4 overflow-hidden service_card p-3 text-white">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-md-7 p-3">
-                                    <h4 class="card-title text-yellow">Diversos outros projetos</h4>
-                                    <p class="card-text regular">Confira outros projetos desenvolvidos por nós, incluindo sites, design gráfico e fotografia no nosso Behance.</p>
-                                    <div class="mb-3">
-                                                                                    <span class="badge bg-warning text-dark me-1">website</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">design</span>
-                                                                                    <span class="badge bg-warning text-dark me-1">fotografia</span>
-                                                                            </div>
-                                    <a href="https://www.behance.net/castrusdigital" target="_blank" class="btn btn-warning fw-bold"><i
-                                            class="bi-box-arrow-in-right"></i> Ver projeto</a>
-                                </div>
-                                <div class="col-md-5">
-                                    <div id="carousel-10a54d64464ebe3be964afa42d6bf530" class="carousel slide"
-                                        data-bs-ride="carousel">
-                                        <div class="carousel-item active">
-                                            <img src="https://i.imgur.com/6gBgECH.png" class="d-block w-100 rounded"
-                                                alt="Diversos outros projetos">
-                                        </div>
-                                        <!-- Você pode adicionar mais imagens futuramente aqui -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </div>
+            </div>
+            </div>
+            </div>
         </section>
 
 
         <!-- Call to action -->
-        <section data-aos="zoom-in" id="cta" class="py-5 d-flex justify-content-center align-items-center flex-column mb-5">
+        <section data-aos="zoom-in" id="cta"
+            class="py-5 d-flex justify-content-center align-items-center flex-column mb-5">
             <div class="cta_card p-5 text-center text-white rounded-4 shadow">
                 <h2 class="section-title title text-yellow mb-4">Bora tirar a ideia do papel? <span
                         class="shine">✦</span></h2>
@@ -361,21 +426,26 @@
 
         <!-- Contato -->
         <section id="contato" class="d-flex justify-content-center align-items-center flex-column mb-5">
-            <h2 data-aos="fade-down" class="section-title text-center title mb-4">Encontre-nos <span class="shine">✦</span></h2>
+            <h2 data-aos="fade-down" class="section-title text-center title mb-4">Encontre-nos <span
+                    class="shine">✦</span></h2>
             <div class="d-flex flex-row">
-                                    <a data-aos="zoom-in" href="https://www.linkedin.com/in/thiagocdearaujo/" class="btn social-button btn-lg m-2" target="_blank">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                                    <a data-aos="zoom-in" href="https://www.instagram.com/castrus.digital" class="btn social-button btn-lg m-2" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                                    <a data-aos="zoom-in" href="https://github.com/thiagomcastro" class="btn social-button btn-lg m-2" target="_blank">
-                        <i class="bi bi-github"></i>
-                    </a>
-                                    <a data-aos="zoom-in" href="https://www.behance.net/castrusdigital" class="btn social-button btn-lg m-2" target="_blank">
-                        <i class="bi bi-behance"></i>
-                    </a>
-                            </div>
+                <a data-aos="zoom-in" href="https://www.linkedin.com/in/thiagocdearaujo/"
+                    class="btn social-button btn-lg m-2" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a data-aos="zoom-in" href="https://www.instagram.com/castrus.digital"
+                    class="btn social-button btn-lg m-2" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a data-aos="zoom-in" href="https://github.com/thiagomcastro" class="btn social-button btn-lg m-2"
+                    target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a data-aos="zoom-in" href="https://www.behance.net/castrusdigital" class="btn social-button btn-lg m-2"
+                    target="_blank">
+                    <i class="bi bi-behance"></i>
+                </a>
+            </div>
         </section>
     </main>
 
@@ -512,5 +582,4 @@
         });
     </script>
 </body>
-
 </html>
