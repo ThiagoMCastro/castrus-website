@@ -81,9 +81,11 @@
 .random-shake {
     animation: random-shake 1s infinite !important;
 }
+
 .random-shake-2 {
     animation: random-shake2 1s infinite !important;
 }
+
 .shine {
     display: inline-block;
     animation: random-shake 1s infinite !important;
@@ -338,6 +340,20 @@ header {
     color: #1e184b !important;
     transform: scale(1.05);
     box-shadow: 0px 0px 20px 7px #1e184b48;
+}
+
+@media (max-width: 768px) {
+    .social-button {
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to top, #1e184b, rgba(0, 0, 0, 0.2));
+        border: 1px solid #1e184b;
+        border-radius: 10px;
+        font-size: 1.7em;
+        padding: 20px;
+        color: #ffc400 !important;
+        transition: all 0.3s ease;
+        box-shadow: 0px 0px 7px 6px #0e06561f;
+    }
 }
 
 .mouse {
