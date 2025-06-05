@@ -365,6 +365,10 @@ header {
     scale: 0.5;
 }
 
+.badge {
+    text-transform: uppercase;
+}
+
 .mouse::before {
     content: '';
     width: 12px;
